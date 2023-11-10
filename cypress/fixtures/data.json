@@ -8,10 +8,13 @@
   "authorizationName": "Администраторррская",
   "ButtonBookingName": "Забронировать",
   "BookingResult": "Вы выбрали билеты:",
+  "hallNames": ["Зал1", "Зал2", "Зал4", "Зал5", "Новый зал", "Супер зал", "Уютный зал"],
 
   "selectors": {
     "loginField": "div.login__wrapper > form > :nth-child(1) > input",
     "passwordField": "div.login__wrapper > form > :nth-child(2) > input",
-    "loginButton": ".login__button"
+    "loginButton": ".login__button",
+    "days": ".page-nav__day",
+    "titlePageCinema": ".page-header__title"
   }
 }

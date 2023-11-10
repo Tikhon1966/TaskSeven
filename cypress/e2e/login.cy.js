@@ -1,5 +1,3 @@
-const { data } = require("cypress/types/jquery");
-
 describe("authorization admin page", () => {
     const data = require("../fixtures/data");
     beforeEach(() => {
@@ -10,4 +8,14 @@ describe("authorization admin page", () => {
       cy.login(data.emailValid, data.passwordValid);
       cy.contains(data.authorizationName).should("be.visible");
     });
-});
+
+    it("login invalid", () => {
+      cy.login(data.emailInvalid, data.passwordValid);
+      cy.contains(data.errorMessage).should("be.visible");
+    });
+  
+    it("password invalid", () => {
+      cy.login(data.emailValid, data.passwordInvalid);
+      cy.contains(data.errorMessage).should("be.visible");
+    });
+  });

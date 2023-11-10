@@ -3,6 +3,12 @@
   "emailInvalid": "ovt66@qamid.ru",
   "passwordValid": "qamid",
   "passwordInvalid": "chess23",
+
+  "errorMessage": "Ошибка авторизации!",
+  "authorizationName": "Администраторррская",
+  "ButtonBookingName": "Забронировать",
+  "BookingResult": "Вы выбрали билеты:",
+
   "selectors": {
     "loginField": "div.login__wrapper > form > :nth-child(1) > input",
     "passwordField": "div.login__wrapper > form > :nth-child(2) > input",

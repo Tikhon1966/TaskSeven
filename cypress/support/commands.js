@@ -13,17 +13,17 @@
 // Cypress.Commands.add('login', (email, password) => { ... })
 Cypress.Commands.add("login", (email, password) => {
     if (email) {
-      cy.fixture("auth").then((auth) => {
-        cy.get(auth.selectors.loginField).type(email);
+      cy.fixture("data").then((data) => {
+        cy.get(data.selectors.loginField).type(email);
       });
     }
     if (password) {
-      cy.fixture("auth").then((auth) => {
-        cy.get(auth.selectors.passwordField).type(password);
+      cy.fixture("data").then((data) => {
+        cy.get(data.selectors.passwordField).type(password);
       });
     }
-    cy.fixture("auth").then((auth) => {
-      cy.get(auth.selectors.loginButton).click();
+    cy.fixture("data").then((data) => {
+      cy.get(data.selectors.loginButton).click();
     });
   });
 //

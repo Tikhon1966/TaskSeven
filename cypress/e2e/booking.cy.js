@@ -4,9 +4,7 @@ describe("booking tickets on movie", () => {
   it("should book a movie in an available hall", () => {
     cy.visit("/admin")
     cy.login(data.emailValid, data.passwordValid)
-
-    cy.fixture("data").as("data")
-    cy.get("@data").then((data) => {
+    cy.fixture('data').then((data) => {
       const expectedHallName = data.hallNames[3]
       cy.get("#hall-control ul > li")
         .should("have.length", data.hallNames.length)

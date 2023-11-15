@@ -1,4 +1,4 @@
-import data from "../fixtures/data";
+import data from "../../fixtures/data";
 
 describe("booking tickets on movie", () => {
   it("should book a movie in an available hall", () => {

@@ -1,4 +1,4 @@
-import data from "../fixtures/data";
+import data from "../../fixtures/data";
 
 describe('movie tickets reservation screen', () => {
    beforeEach(() => {

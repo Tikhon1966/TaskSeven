@@ -1,5 +1,5 @@
 describe("authorization admin page", () => {
-    const data = require("../fixtures/data");
+    const data = require("../../fixtures/data");
     beforeEach(() => {
       cy.visit("/admin");
     });
